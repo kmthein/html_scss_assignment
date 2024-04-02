@@ -1,6 +1,6 @@
 $font-family: "Helvetica", "san-serif";
-$blue-color: #415ae6;
-$bluelight-color: #6c7fe6;
+$blueColor: #415ae6;
+$blueLightColor: #6c7fe6;
 @mixin innerWidth($width : 800px) {
     width: $width;
 }
@@ -17,18 +17,35 @@ $bluelight-color: #6c7fe6;
         padding: 30px;
         font-size: 13px;
         text-align: center;
+        a {
+            color: #fff;
+            &:hover {
+                color: #d0cdcd
+            }
+        }
     }
 }
 .head__nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
     &__menu {
         display: flex;
         list-style: none;
-        gap: 1px;
         li {
             width: calc(100% / 3);
+            display: inline-flex;
+            align-self: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 70px;
             background: #c0c0c0;
             text-align: center;
-            padding: 20px 0;
+            border-right: 1px solid #fff;
+            &:hover {
+                border-bottom: 2px solid $blueColor;
+            }
         }
         a {
             &:hover {
@@ -57,13 +74,11 @@ a {
     }
     &__img {
         overflow: hidden;
-        height: 300px;
         &:hover img {
             transform: scale(1.2);
         }
         img {
             width: 100%;
-            height: 300px;
             object-fit: cover;
             transition: 0.5s all ease-in-out;
         }
@@ -75,16 +90,13 @@ a {
     padding: 10px 0;
     margin: 5px 20px;
     position: relative;
-    border: 1px solid $blue-color;
-    border-right: 2px solid $blue-color;
-    border-bottom: 2px solid $blue-color;
+    border: 1px solid $blueColor;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transform: skewX(-30deg);
     transition: 1s ease-out;
     background-size: 200%;
     &:hover {
-        background: $bluelight-color;
-        background-position: left;
+        background: $blueLightColor;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         a {
             transition: 0.5s;
@@ -95,15 +107,14 @@ a {
 .faq {
     margin: 20px auto;
     dt {
-        background: $blue-color;
+        background: $blueColor;
         padding: 20px 30px;
         color: #fff;
         position: relative;
         &::after {
            content: "+"; 
            position: absolute;
-           right: 0;
-           padding-right: 30px;
+           right: 30px;
            font-size: 20px;
         }
     }
@@ -112,7 +123,7 @@ a {
     }
 }
 .footer-bg {
-    background: $blue-color;
+    background: $blueColor;
     padding: 20px 0;
     text-align: center;
     color: #fff;
