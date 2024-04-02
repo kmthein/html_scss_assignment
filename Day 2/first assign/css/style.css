@@ -38,9 +38,15 @@
   background: #c0c0c0;
   text-align: center;
   border-right: 1px solid #fff;
+  position: relative;
 }
-.head__nav__menu li:hover {
-  border-bottom: 2px solid #415ae6;
+.head__nav__menu li:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #415ae6;
 }
 .head__nav__menu a:hover {
   color: #494949;
