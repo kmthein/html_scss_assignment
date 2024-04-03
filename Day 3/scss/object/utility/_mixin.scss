@@ -1,0 +1,9 @@
+@mixin mainWidth ($width: 100%) {
+    width: $width;
+}
+@mixin outerWidth ($width: 1280px) {
+    width: $width;
+}
+@mixin innerWidth ($width: 1017px) {
+    width: $width;
+}

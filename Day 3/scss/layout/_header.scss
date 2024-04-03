@@ -1,0 +1,29 @@
+.head {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 51px 0;
+    a {
+        color: #D9F0FF;
+    }
+    &__logo {
+        a {
+            font-weight: bold;
+            font-size: 28px;
+        }
+    }
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    .nav-list {
+        display: flex;
+        list-style: none;
+        gap: 28px;
+        li {
+            font-family: $poppins;
+            font-size: 12px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+    }
+}
