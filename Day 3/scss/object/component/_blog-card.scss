@@ -1,0 +1,38 @@
+.c-blog {
+    display: flex;
+    width: 100%;
+    .c-blog-info {
+        width: calc(50% - 172px);
+        padding: 0 86px;
+        display: inline-flex;
+        flex-direction: column;
+        padding-top: 93px;
+        h2, p {
+            width: 468px;
+        }
+        h2 {
+            margin-bottom: 45px;
+            line-height: 67px;
+            font-size: 50px;
+            font-weight: 300;
+            padding-bottom: 30px;
+        }
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 25px;
+            padding-bottom: 50px;
+            opacity: 50%;
+        }
+    }
+    .c-blog-img {
+        width: 50%;
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+.c-blog-reverse {
+    flex-direction: row-reverse;
+}
