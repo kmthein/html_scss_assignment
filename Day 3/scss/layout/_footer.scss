@@ -4,9 +4,8 @@
     text-align: center;
     address {
         color: #fff;
-        font-family: $poppins;
+        @include poppinsFont();
         font-size: 20px;
-        font-weight: 400;
-        opacity: 52%;
+        opacity: 0.52;
     }
 }

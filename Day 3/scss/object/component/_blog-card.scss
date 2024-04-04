@@ -14,15 +14,16 @@
             margin-bottom: 45px;
             line-height: 67px;
             font-size: 50px;
-            font-weight: 300;
             padding-bottom: 30px;
+            @include latoFont(300)
         }
         p {
             font-size: 16px;
             font-weight: 400;
             line-height: 25px;
             padding-bottom: 50px;
-            opacity: 50%;
+            opacity: 0.5;
+            @include poppinsFont();
         }
     }
     .c-blog-img {
@@ -35,4 +36,23 @@
 }
 .c-blog-reverse {
     flex-direction: row-reverse;
+}
+@media screen and (max-width: 800px) {
+    .c-blog {
+        display: inline-block;
+        position: relative;
+        .c-blog-info, .c-blog-img {
+            width: 100%;
+        }
+        .c-blog-info {
+            position: absolute;
+            padding: 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            background: rgba($color: #eeeeee, $alpha: 0.6);
+        }
+    }
+    
 }

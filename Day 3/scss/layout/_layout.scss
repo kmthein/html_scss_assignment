@@ -1,12 +1,17 @@
 .outer-width {
-    @include outerWidth();
+    @include setWidth(1280px);
 }
 .inner-width {
-    @include innerWidth();
+    @include setWidth(1017px);
 }
 .mx-auto {
     margin: 0 auto;
 }
 .w-full {
     width: 100%;
+}
+@media screen and (max-width: 800px) {
+    .outer-width {
+        @include setWidth(800px);
+    }
 }

@@ -7,19 +7,25 @@
     background-image: url("../img/mainvisual-bg.png");
     background-size: cover;
     background-position: bottom;
+    &__btn {
+        width: 371px;
+        height: 72px;
+    }
     &__inner {
+        width: 1017px;
         text-align: center;
         color: #fff;
         h2 {
             font-size: 100px;
-            font-weight: 300;
             padding: 20px 0;
+            @include latoFont(300);
         }
         p {
             font-size: 15px;
             font-weight: 400;
             line-height: 25px;
             padding-bottom: 55px;
+            @include poppinsFont();
         }
     }
 }

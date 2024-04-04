@@ -4,29 +4,25 @@ header {
     z-index: 3;
 }
 .l-head {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     padding: 51px 0;
     a {
         color: #D9F0FF;
     }
     &__logo {
         a {
-            font-weight: bold;
             font-size: 28px;
-            font-family: $dancingScript;
+            @include dancingScriptFont(700)
         }
     }
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: flex-end;
     .nav-list {
         display: flex;
         list-style: none;
         gap: 28px;
         li {
-            font-family: $poppins;
+            @include poppinsFont();
             font-size: 12px;
             font-weight: 500;
             text-transform: uppercase;
@@ -52,4 +48,10 @@ header {
             }
         }
     }
+}
+@media screen and (max-width: 800px) {
+    .l-head {
+        justify-content: space-around;
+    }
+    
 }
