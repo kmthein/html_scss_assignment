@@ -1,17 +1,17 @@
-.blog {
+.c-blog {
     display: flex;
     width: 100%;
-    .blog-info {
+    .c-blog-info {
         width: calc(50% - 172px);
         padding: 0 86px;
         display: inline-flex;
         flex-direction: column;
-        justify-content: center;
+        padding-top: 93px;
         h2, p {
             width: 468px;
         }
         h2 {
-            margin-bottom: 24px;
+            margin-bottom: 45px;
             line-height: 67px;
             font-size: 50px;
             font-weight: 300;
@@ -25,7 +25,7 @@
             opacity: 50%;
         }
     }
-    .blog-img {
+    .c-blog-img {
         width: 50%;
         img {
             width: 100%;
@@ -33,6 +33,6 @@
         }
     }
 }
-.blog-reverse {
+.c-blog-reverse {
     flex-direction: row-reverse;
 }

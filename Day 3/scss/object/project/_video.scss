@@ -1,5 +1,6 @@
-.video-container {
+.p-video-container {
     position: relative;
+    z-index: 1;
     &__bg {
         img {
             width: 100%;
@@ -9,8 +10,7 @@
         position: absolute;
         color: #fff;
         width: 100%;
-        padding-top: 255px;
-        top: 0;
+        top: 25%;
         left: 50%;
         transform: translateX(-50%);
         display: inline-flex;
