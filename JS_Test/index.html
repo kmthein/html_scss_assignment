@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Form</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="inner-wrapper">
+            <section class="form-container">
+                <form id="form">
+                    <h1>Student Registeration</h1>
+                    <div class="form-group form-input">
+                        <label for="first-name">
+                            First Name
+                        </label>
+                        <input type="text" name="first-name" id="first-name">
+                        <span id="first-name-error" class="error-msg"></span>
+                    </div>
+                    <div class="form-group form-input">
+                        <label for="last-name">
+                            Last Name
+                        </label>
+                        <input type="text" name="last-name" id="last-name">
+                        <span id="last-name-error" class="error-msg"></span>
+                    </div>
+                    <div class="form-group form-input">
+                        <label for="phone">
+                            Phone Number
+                        </label>
+                        <input type="text" name="phone" id="phone">
+                        <span id="phone-error" class="error-msg"></span>
+                    </div>
+                    <div class="form-group form-input">
+                        <label for="email">
+                            Email
+                        </label>
+                        <input type="text" name="email" id="email">
+                        <span id="email-error" class="error-msg"></span>
+                    </div>
+                    <div class="form-group form-input">
+                        <label for="password">
+                            Password
+                        </label>
+                        <input type="password" name="password" id="password">
+                        <span id="password-error" class="error-msg"></span>
+                    </div>
+                    <div class="form-group form-input">
+                        <label for="confirm-password">
+                            Confirm Password
+                        </label>
+                        <input type="password" name="confirm-password" id="confirm-password">
+                        <span id="confirm-password-error" class="error-msg"></span>
+                    </div>
+                    <div class="form-group submit-btn">
+                        <input type="submit" name="submit" id="submit">
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
