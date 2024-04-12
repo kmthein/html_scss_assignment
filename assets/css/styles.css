@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 30%;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(23, 23, 23, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+.inner-wrapper {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.form-container h1 {
+    text-align: center;
+    padding: 20px;
+}
+.form-group {
+    margin: 20px 0;
+}
+.form-group label {
+    display: block;
+    min-width: 100px;
+}
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #d1d1d1;
+    outline: none;
+}
+.submit-btn {
+    width: 20%;
+    margin-left: auto;
+    margin-top: 30px;
+}
+.submit-btn input {
+    background: #0a0045;
+    color: #FFF;
+    cursor: pointer;
+}
+.login-btn {
+    width: 150px;
+    background: #0a0045;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 0;
+    text-align: center;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.main {
+    min-height: 100vh;
+}
+.modal-container {
+    position: absolute;
+    width: 100%;
+    top: -150%;
+    z-index: 0;
+    transition: .3s ease-out;
+}
+.modal {
+    z-index: 0;
+    left: 50%;
+    top: 0;
+    position: absolute;
+    transform: translateX(-50%);
+}
+.show {
+    top: 0;
+    transition: .3s ease-out;
+}
+.show .modal-overlay {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    top: 0;
+    z-index: 4;
+}
+.show .modal {
+    display: block;
+    top: 0;
+    z-index: 10;
+}
